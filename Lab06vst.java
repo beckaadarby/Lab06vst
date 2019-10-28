@@ -30,14 +30,18 @@ public class Lab06vst extends Applet
 			int green = (int) (Math.random()* 257 + 0);
 			g.setColor(new Color(red,green,blue));
 			g.drawLine(x,y,x2,y2);
-
 		}
-
-
-
-
 		// Draw Random Squares
-
+		for (int k=1; k<=100; k++)
+		{
+			int x = (int) (Math.random()* 341 + 400);
+			int y = (int) (Math.random()* 241 + 10);
+			int red = (int) (Math.random()* 257 + 0);
+			int blue = (int) (Math.random()* 257 + 0);
+			int green = (int) (Math.random()* 257 + 0);
+			g.setColor(new Color(red,green,blue));
+			g.fillRect(x,y,50,50);
+		}
 
 
 
