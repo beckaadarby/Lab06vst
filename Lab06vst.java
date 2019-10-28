@@ -19,7 +19,19 @@ public class Lab06vst extends Applet
 
 
 		// Draw Random Lines
+		for (int k=1; k<=100; k++)
+		{
+			int x = (int) (Math.random()* 391 + 10);
+			int y = (int) (Math.random()* 291 + 10);
+			int x2 = (int) (Math.random()* 391 + 10);
+			int y2 = (int) (Math.random()* 291 + 10);
+			int red = (int) (Math.random()* 257 + 0);
+			int blue = (int) (Math.random()* 257 + 0);
+			int green = (int) (Math.random()* 257 + 0);
+			g.setColor(new Color(red,green,blue));
+			g.drawLine(x,y,x2,y2);
 
+		}
 
 
 
@@ -45,8 +57,3 @@ public class Lab06vst extends Applet
 	}
 
 }
-
-
-
-
- 
