@@ -55,11 +55,32 @@ public class Lab06vst extends Applet
 			g.drawOval(x,y,d,d);
 		}
 		// Draw 3-D Box
-
-
-
-
-
+		//red face
+		g.setColor(new Color(255,0,0));
+		g.fillRect(550,450,80,80);
+		//blue face
+		Polygon triangle = new Polygon();
+		g.setColor(new Color(0,0,255));
+		triangle.addPoint(630,450);
+		triangle.addPoint(590,450);
+		triangle.addPoint(590,410);
+		g.fillPolygon(triangle);
+		//yellow face
+		Polygon trap = new Polygon();
+		g.setColor(new Color(255,255,0));
+		trap.addPoint(590,450);
+		trap.addPoint(590,410);
+		trap.addPoint(510,410);
+		trap.addPoint(550,450);
+		g.fillPolygon(trap);
+		//green face
+		Polygon diamond = new Polygon();
+		g.setColor(new Color(0,255,0));
+		diamond.addPoint(550,450);
+		diamond.addPoint(510,410);
+		diamond.addPoint(510,490);
+		diamond.addPoint(550,530);
+		g.fillPolygon(diamond);
 	}
 
 }
